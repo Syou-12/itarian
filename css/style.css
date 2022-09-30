@@ -1,0 +1,708 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Alkalami', serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.bt:active {
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+/* HEADER */
+
+h1 {
+    font-size: 36px;
+    margin-left: 50px;
+    margin-top: 5px;
+    position: absolute
+}
+
+.top {
+    display: flex;
+    z-index: 11;
+}
+
+.nav-list {
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+}
+
+.nav-list li a {
+    position: relative;
+}
+
+.nav-list a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    bottom: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.nav-list a:hover::after {
+    visibility: visible;
+    bottom: -10px;
+    opacity: 1;
+}
+
+.hed-text {
+    font-size: 18px;
+}
+
+.hed-last {
+    font-size: 18px;
+    background: #5f4129;
+    width: 100%;
+    padding: 20px 20px;
+    margin-top: -20px;
+
+}
+
+/* 背景アニメーション */
+.box {
+    position: relative;
+    max-width: 100%;
+    height: 1000px;
+    overflow: hidden;
+}
+
+.box .bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    animation: fade 20s infinite;
+}
+
+.box .src1 {
+    background-image: url(../img/menu1.jpg);
+    background-size: cover;
+    animation-delay: 0s;
+}
+
+.box .src2 {
+    background-image: url(../img/menu2.jpg);
+    background-size: cover;
+    animation-delay: 5s;
+}
+
+.box .src3 {
+    background-image: url(../img/menumv.jpg);
+    background-size: cover;
+    animation-delay: 10s;
+}
+
+.box .src4 {
+    background-image: url(../img/syehu1.jpg);
+    background-size: cover;
+    animation-delay: 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    45% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* MENU・ABOUT */
+
+.text-a {
+    display: flex;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.text-a img {
+    width: 60%;
+    height: 40%;
+}
+
+.text-b {
+    background: #5f4129;
+    width: 40%;
+    margin-top: 10%;
+    padding-top: 5%;
+}
+
+.text-b h2 {
+    color: #fff;
+}
+
+.text-b p {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    color: #fff;
+}
+
+.text-b a {
+    color: #000;
+    border: #000 solid 1px;
+    background-color: #fff;
+    font-size: 18px;
+    padding: 10px 40px;
+}
+
+.text-b {
+    opacity: 0;
+    transform: translateX(200px);
+}
+
+/* スクロール時に適応するクラスを定義 ( JavaScriptで上のクラスに上書きする ）*/
+.FadeIN {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: opacity 2.2s, transform 1.2s;
+}
+
+.right {
+    opacity: 0;
+    transform: translateX(-200px);
+}
+
+.FadeIN-r {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: opacity 2.2s, transform 1.2s;
+}
+
+
+/* ACCESS */
+
+.ac-title {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.access-list {
+    display: flex;
+    margin-top: 50px;
+}
+
+.map {
+    margin-left: 10%;
+}
+
+.map-text {
+    margin-top: -20%;
+    margin-left: 60%;
+}
+
+.name {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.namber {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.ac {
+    margin-bottom: 30px;
+}
+
+/* RESERVE */
+
+.re {
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 80px;
+}
+
+.re-set {
+    display: flex;
+    justify-content: space-between;
+}
+
+.re-flex img {
+    width: 60%;
+    height: 40%;
+    margin-left: 40%;
+    margin-top: -20%;
+}
+
+.re-list {
+    margin-left: 80px;
+    margin-top: 30%;
+}
+
+.re-list a {
+    border: #000 1px solid;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 30px;
+}
+
+.tel {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.time {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.time-a {
+    margin-right: 50px;
+}
+
+.re-set {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #5f4129;
+    padding-top: 50px;
+    margin-top: 10%;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list h2 {
+    color: #fff;
+    margin-left: 50px;
+    font-size: 36px;
+    margin-top: -20px;
+}
+
+.list {
+    display: flex;
+}
+
+.list li {
+    margin-left: 40px;
+    margin-right: 10px;
+}
+
+.copy {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* SP */
+
+@media screen and (max-width: 767px) {
+
+    h1 {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .top {
+        display: block;
+    }
+
+    /* 背景アニメーション */
+    .box {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+    }
+
+    .box .bgimg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        animation: fade 20s infinite;
+    }
+
+    .box .src1 {
+        background-image: url(../img/menu1.jpg);
+        background-size: cover;
+        animation-delay: 0s;
+    }
+
+    .box .src2 {
+        background-image: url(../img/menu2.jpg);
+        background-size: cover;
+        animation-delay: 5s;
+    }
+
+    .box .src3 {
+        background-image: url(../img/menumv.jpg);
+        background-size: cover;
+        animation-delay: 10s;
+    }
+
+    .box .src4 {
+        background-image: url(../img/syehu1.jpg);
+        background-size: cover;
+        animation-delay: 15s;
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+
+        15% {
+            opacity: 1;
+        }
+
+        30% {
+            opacity: 1;
+        }
+
+        45% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+
+    button {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        color: inherit;
+        cursor: pointer;
+        font: inherit;
+        margin: 0;
+        outline: none;
+        padding: 0;
+        vertical-align: middle;
+        margin-left: 170px;
+
+    }
+
+    .bg-btn.close {
+        padding-left: 75%;
+    }
+
+    /*ハンバーガーボタン*/
+    .bg-btn {
+        display: block;
+        width: 75%;
+        height: 100px;
+        position: fixed;
+        z-index: 30;
+        border: none;
+        background-color: transparent;
+        margin-top: -330px;
+    }
+
+    .bar {
+        width: 30px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+    }
+
+    .bar-top {
+        top: 40px;
+    }
+
+    .bar-mid {
+        top: 60px;
+    }
+
+    .nar-bottom {
+        bottom: 40px;
+    }
+
+    .bg-btn.close .bar-top {
+        transform: translate(-40%, 5px) rotate(45deg);
+        transition: transform .3s;
+    }
+
+    .bg-btn.close .bar-mid {
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .bg-btn.close .bar-bottom {
+        transform: translate(-40%, -5px) rotate(-45deg);
+        transition: transform .3s;
+    }
+
+    .btn {
+        height: 100vh;
+        left: 0;
+        position: fixed;
+        top: 0;
+        transform: translateX(100%);
+        transition: transform .3s;
+        width: 100vw;
+        z-index: 30;
+    }
+
+    .list {
+        width: 100%;
+        height: 100%;
+        background-color: #5f4129;
+        z-index: 30;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .hed-text .hed-last {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .noscroll {
+        overflow: hidden;
+    }
+
+    .btn.slide-in {
+        transform: translateX(0);
+    }
+
+    .list .navi ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 260px;
+    }
+
+    .hed-last {
+        padding: 10px 10px;
+        background-color: #fff;
+    }
+
+    .hed-last a {
+        color: #000;
+    }
+
+    .list li {
+        margin: 0 auto;
+    }
+
+    .hed-text {
+        padding-bottom: 50px;
+
+    }
+
+    .text-a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-a img {
+        width: 90%;
+        height: 250px;
+        margin-top: 60px;
+    }
+
+    .text-b {
+        background: #5f4129;
+        width: 90%;
+        height: 220px;
+        margin-top: 0;
+        padding-top: 0;
+        margin-left: 10%;
+    }
+
+    .text-b p {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .reverse img {
+        margin-left: 10%;
+    }
+
+    .right {
+        background: #5f4129;
+        width: 90%;
+        height: 220px;
+        margin-top: 0;
+        padding-top: 0;
+        margin-left: 0;
+    }
+
+    .text-b {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+
+    .FadeIN {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: opacity 2.2s, transform 1.2s;
+    }
+
+    .right {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+
+    .FadeIN-r {
+        opacity: 1;
+        transform: translateX(0px);
+        transition: opacity 2.2s, transform 1.2s;
+    }
+
+    /* ACCESS */
+
+    .map {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 75%;
+        margin-left: 0;
+    }
+
+    .map iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+    }
+
+    .map-text {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .map-text h3 {
+        font-size: 18px;
+    }
+
+    .map-text p {
+        font-size: 18px;
+    }
+
+    .map-flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .map-list h2 {
+        font-size: 30px;
+    }
+
+
+    .re-text {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .re-text h3 {
+        font-size: 18px;
+    }
+
+    .re-flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .re-set {
+        display: block;
+    }
+
+    .re-list {
+        margin: 0 auto;
+    }
+
+    .re-flex img {
+        width: 100%;
+        height: 250px;
+        margin-top: 80px;
+        margin-left: 0;
+    }
+
+    .re {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .re h2 {
+        font-size: 30px;
+    }
+
+    .time {
+        margin-top: 50px;
+    }
+
+    .footer-list h2 {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+    .footer-list li {
+        font-size: 10px;
+        margin-left: 10px;
+        margin-right: 5px;
+        margin-top: -10px;
+    }
+
+}
