@@ -387,19 +387,18 @@ footer {
     }
 
     .top-mv img {
-        width: 75%;
-        height: 250px;
+        width: 65%;
+        height: 200px;
     }
 
     .top-mv {
         background: #5f4129;
         width: 100%;
-        height: 300px;
     }
 
     .top-mv h2 {
         font-size: 20px;
-        margin-right: 10px;
+       
     }
 
     button {
@@ -423,7 +422,7 @@ footer {
     /*ハンバーガーボタン*/
     .bg-btn {
         display: block;
-        width: 40%;
+        width: 60%;
         height: 100px;
         position: fixed;
         z-index: 30;
@@ -658,6 +657,7 @@ footer {
     }
 
     .ac-a {
+        display: block;
         margin: 0 auto;
         width: 100%;
         padding-bottom: 20px;
@@ -665,9 +665,22 @@ footer {
     }
 
     .ac-b {
+        display: block;
         margin: 0 auto;
         width: 100%;
         padding-bottom: 20px;
+    }
+
+    .ac-a p {
+        text-align: center;
+    }
+
+    .ac-b p {
+        text-align: center;
+    }
+
+    .ac-text {
+        margin: 0 auto;
     }
 
     .ac-yu {

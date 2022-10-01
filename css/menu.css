@@ -145,18 +145,16 @@ h1 {
 }
 
 .menu-a {
-    display: flex;
     text-align: center;
     margin-left: -20%;
 }
 
 .menu-a li {
     margin-bottom: 50px;
+    text-align: center;
 }
 
-.money {
-    margin-left: 50px;
-}
+
 
 .alcole-title {
     text-align: center;
@@ -165,12 +163,6 @@ h1 {
 .alcole-list {
     display: flex;
     justify-content: space-around;
-}
-
-.menu-al {
-    display: flex;
-    margin-left: 20%;
-    margin-right: -20%;
 }
 
 #alcole h2 {
@@ -182,18 +174,10 @@ h1 {
     margin-bottom: 50px;
 }
 
-.alcole-money {
-    margin-left: 50px;
-}
-
-.alcole-money li {
-    margin-bottom: 50px;
-}
 
 .red h3 {
     margin-bottom: 50px;
-    text-align: center;
-    margin-left: 30%;
+   
     margin-top: 30px;
 }
 
@@ -218,7 +202,7 @@ h1 {
 }
 
 .color {
-    margin-left: 30%;
+    margin-left: 30px;
 }
 
 .alcole-title {
@@ -400,13 +384,13 @@ footer {
     /*ハンバーガーボタン*/
     .bg-btn {
         display: block;
-        width: 40%;
+        width: 60%;
         height: 100px;
         position: fixed;
         z-index: 30;
         border: none;
         background-color: transparent;
-        margin-top: -80px;
+        margin-top: -85px;
     }
 
     .bar {
@@ -601,13 +585,8 @@ footer {
 
     .menu-list {
         text-align: start;
-        margin-left: 20%;
     }
 
-    .money {
-        margin-top: -80%;
-        margin-left: 50%;
-    }
 
     .title {
         font-size: 30px;
@@ -645,12 +624,13 @@ footer {
     }
 
     .red h3 {
-        margin-left: 0;
+        text-align: center;
+        
     }
 
     .alcole-menu {
         text-align: start;
-        margin-left: 10%;
+      
     }
 
     .alcole-money {
@@ -675,6 +655,7 @@ footer {
     }
 
     .ac-a {
+        display: block;
         margin: 0 auto;
         width: 100%;
         padding-bottom: 20px;
@@ -682,9 +663,22 @@ footer {
     }
 
     .ac-b {
+        display: block;
         margin: 0 auto;
         width: 100%;
         padding-bottom: 20px;
+    }
+
+    .ac-a p {
+        text-align: center;
+    }
+
+    .ac-b p {
+        text-align: center;
+    }
+
+    .ac-text {
+        margin: 0 auto;
     }
 
     .ac-yu {
@@ -725,4 +719,9 @@ footer {
         margin-right: 5px;
         margin-top: -10px;
     }
+
+    .bt {
+        margin-left: 30px;
+    }
+
 }
