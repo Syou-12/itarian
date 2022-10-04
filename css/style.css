@@ -222,7 +222,11 @@ h1 {
 
 .map {
     margin-left: 50px;
+    max-width: 100%;
+    width: 100%;
 }
+
+
 
 .map-text {
     margin-right: 10%;
