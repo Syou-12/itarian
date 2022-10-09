@@ -305,8 +305,7 @@ h1 {
     height: 60px;
     position: fixed;
     right: 0;
-    bottom: 0;
-    margin-bottom: 30px;
+    bottom: 140px;
     opacity: 0.8;
     border: 3px solid #000;
     border-radius: 15px;
@@ -403,7 +402,7 @@ footer {
     .box {
         position: relative;
         width: 100%;
-        height: 300px;
+        height: 400px;
         overflow: hidden;
     }
 
@@ -478,24 +477,20 @@ footer {
         outline: none;
         padding: 0;
         vertical-align: middle;
-        margin-left: 170px;
+        margin-left: 70%;
 
-    }
-
-    .bg-btn.close {
-        padding-left: 75%;
     }
 
     /*ハンバーガーボタン*/
     .bg-btn {
         display: block;
-        width: 80%;
+        width: 30%;
         height: 100px;
         position: fixed;
         z-index: 30;
         border: none;
         background-color: transparent;
-        margin-top: -330px;
+        margin-top: -420px;
     }
 
     .bar {
@@ -503,7 +498,7 @@ footer {
         height: 2px;
         display: block;
         position: absolute;
-        left: 50%;
+        left: 65%;
         transform: translateX(-50%);
         background-color: #fff;
     }
@@ -605,11 +600,12 @@ footer {
         flex-direction: column;
         padding-top: 50px;
         background-color: #845d3e;
+        margin: 0 auto;
     }
 
     .text-a img {
         width: 90%;
-        height: 250px;
+        height: auto;
     }
 
     .text-b {

@@ -314,8 +314,7 @@ h1 {
     height: 60px;
     position: fixed;
     right: 0;
-    bottom: 0;
-    margin-bottom: 30px;
+    bottom: 150px;
     opacity: 0.8;
     border: 3px solid #000;
     border-radius: 15px;
@@ -373,7 +372,7 @@ footer {
     justify-content: space-between;
 }
 
-.footer-list h2 {
+.footer-list h2 a {
     color: #fff;
     margin-left: 50px;
     font-size: 36px;
@@ -387,6 +386,7 @@ footer {
 .fo-list li {
     margin-left: 40px;
     margin-right: 10px;
+    margin-top: 20px;
 }
 
 .fo-list a {
@@ -435,20 +435,20 @@ footer {
         outline: none;
         padding: 0;
         vertical-align: middle;
-        margin-left: 170px;
+        margin-left:  70%;
 
     }
 
     /*ハンバーガーボタン*/
     .bg-btn {
         display: block;
-        width: 60%;
+        width: 30%;
         height: 100px;
         position: fixed;
         z-index: 30;
         border: none;
         background-color: transparent;
-        margin-top: -85px;
+        margin-top: -80px;
     }
 
     .bar {
@@ -771,7 +771,7 @@ footer {
         margin-top: 20px;
     }
 
-    .footer-list h2 {
+    .footer-list h2 a {
         font-size: 20px;
         margin-left: 30px;
     }
@@ -780,7 +780,6 @@ footer {
         font-size: 10px;
         margin-left: 10px;
         margin-right: 5px;
-        margin-top: -10px;
     }
 
     .bt {
